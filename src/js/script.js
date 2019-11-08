@@ -73,6 +73,8 @@
       console.log('classNames:', classNames);
       console.log('settings:', settings);
       console.log('templates:', templates);
+
+      thisApp.initMenu();
     },
   };
 
