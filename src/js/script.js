@@ -57,8 +57,15 @@
       const thisProduct = this;
       thisProduct.id = id;
       thisProduct.data = data;
+
+      thisProduct.renderInMenu();
+
       console.log('new Product:', thisProduct)
     }
+    renderInMenu(){
+      const thisProduct = this;
+    }
+
   }
 
   const app = {
