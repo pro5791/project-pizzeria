@@ -58,9 +58,10 @@
       thisProduct.id = id;
       thisProduct.data = data;
 
+      thisProduct.initAccordion();
       thisProduct.renderInMenu();
 
-      console.log('new Product:', thisProduct);
+      //console.log('constructor-new Product:', thisProduct);
     }
 
     renderInMenu(){
@@ -74,17 +75,24 @@
 
       /* find menu container */
       const menuContainer = document.querySelector(select.containerOf.menu);
-      console.log('menuContainer:', menuContainer);
+      //console.log('menuContainer:', menuContainer);
 
       /* add element to menu */
       menuContainer.appendChild(thisProduct.element);
+    }
+
+    initAccordion(){
+      const thisProduct = this;
+
+      console.log('initAccordion-thisProduct:', thisProduct);
+
     }
   }
 
   const app = {
     initMenu: function(){
       const thisApp = this;
-      console.log('thisApp.data:', thisApp.data);
+      //console.log('initMenu-thisApp.data:', thisApp.data);
 
       for(let productData in thisApp.data.products){
         new Product(productData,thisApp.data.products[productData]);
@@ -98,11 +106,11 @@
 
     init: function(){
       const thisApp = this;
-      console.log('*** App starting ***');
-      console.log('thisApp:', thisApp);
-      console.log('classNames:', classNames);
-      console.log('settings:', settings);
-      console.log('templates:', templates);
+      //console.log('*** App starting ***');
+      //console.log('init-thisApp:', thisApp);
+      //console.log('init-classNames:', classNames);
+      //console.log('init-settings:', settings);
+      //console.log('init-templates:', templates);
 
       thisApp.initData();
       thisApp.initMenu();
