@@ -40,6 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kodilla" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -68,7 +69,7 @@
       <updated>1573161080904</updated>
       <workItem from="1573161082133" duration="469000" />
       <workItem from="1573233708583" duration="8688000" />
-      <workItem from="1573316970586" duration="4380000" />
+      <workItem from="1573316970586" duration="5712000" />
     </task>
     <servers />
   </component>

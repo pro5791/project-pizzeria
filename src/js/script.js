@@ -86,9 +86,8 @@
 
       console.log('initAccordion-thisProduct:', thisProduct);
 
+
       /* find the clickable trigger (the element that should react to clicking) */
-      const clickableTrigger = thisProduct.element.querySelector(select.menuProduct.clickable)
-      console.log('clickableTrigger:', clickableTrigger);
 
       /* START: click event listener to trigger */
 
@@ -100,11 +99,11 @@
 
       /* START LOOP: for each active product */
 
-        /* START: if the active product isn't the element of thisProduct */
+      /* START: if the active product isn't the element of thisProduct */
 
-          /* remove class active for the active product */
+      /* remove class active for the active product */
 
-        /* END: if the active product isn't the element of thisProduct */
+      /* END: if the active product isn't the element of thisProduct */
 
       /* END LOOP: for each active product */
 
@@ -130,11 +129,11 @@
 
     init: function(){
       const thisApp = this;
-      //console.log('*** App starting ***');
-      //console.log('init-thisApp:', thisApp);
-      //console.log('init-classNames:', classNames);
-      //console.log('init-settings:', settings);
-      //console.log('init-templates:', templates);
+      console.log('*** App starting ***');
+      console.log('init-thisApp:', thisApp);
+      console.log('init-classNames:', classNames);
+      console.log('init-settings:', settings);
+      console.log('init-templates:', templates);
 
       thisApp.initData();
       thisApp.initMenu();
