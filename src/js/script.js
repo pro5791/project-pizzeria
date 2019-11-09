@@ -60,7 +60,7 @@
 
       thisProduct.renderInMenu();
 
-      console.log('new Product:', thisProduct)
+      console.log('new Product:', thisProduct);
     }
 
     renderInMenu(){
