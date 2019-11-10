@@ -210,17 +210,17 @@
           }
           /* START ELSE IF: if option is selected */
           else {
-              for(let image of images){
-                image.classList.remove(classNames.menuProduct.imageVisible);
-              }
+            for(let image of images){
+              image.classList.remove(classNames.menuProduct.imageVisible);
+            }
           /* END ELSE IF: if option is selected */
           }
         /* END LOOP: for each optionId in param.options */
         }
       /* END LOOP: for each paramId in thisProduct.data.params */
       }
-    /* set the contents of thisProduct.priceElem to be the value of variable price */
-    thisProduct.priceElem = price;
+      /* set the contents of thisProduct.priceElem to be the value of variable price */
+      thisProduct.priceElem = price;
     }
   }
 
