@@ -205,7 +205,6 @@
     }
   }
 
-
   const app = {
     initMenu: function(){
       const thisApp = this;
