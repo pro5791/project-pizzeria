@@ -83,17 +83,15 @@
 
     initAccordion(){
       const thisProduct = this;
-
-      console.log('initAccordion-thisProduct:', thisProduct);
-
+      //console.log('initAccordion-thisProduct:', thisProduct);
 
       /* find the clickable trigger (the element that should react to clicking) */
       const clickableTrigger = thisProduct.element.querySelector(select.menuProduct.clickable);
-      console.log('clickableTrigger: ', clickableTrigger);
+      //console.log('clickableTrigger: ', clickableTrigger);
 
       /* START: click event listener to trigger */
       clickableTrigger.addEventListener('click', function(event){
-        console.log('clicked', event);
+        //sconsole.log('clicked', event);
 
         /* prevent default action for event */
         event.preventDefault();
