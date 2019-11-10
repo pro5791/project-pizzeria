@@ -185,7 +185,7 @@
           const optionSelected = formData.hasOwnProperty(paramId) && formData[paramId].indexOf(optionId) > -1;
           console.log('optionSelected: ' ,optionSelected);
 
-          const images = thisProduct.imageWrapper.querySelector('.' + paramId + '-' + optionId);
+          const images = thisProduct.imageWrapper.querySelectorAll('.' + paramId + '-' + optionId);
           console.log('images: ', images);
 
           /* START IF: if option is selected and option is not default */
@@ -220,7 +220,7 @@
       /* END LOOP: for each paramId in thisProduct.data.params */
       }
       /* set the contents of thisProduct.priceElem to be the value of variable price */
-      thisProduct.priceElem = price;
+      thisProduct.priceElem = price
     }
   }
 
