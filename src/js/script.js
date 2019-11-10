@@ -58,8 +58,8 @@
       thisProduct.id = id;
       thisProduct.data = data;
 
-      thisProduct.initAccordion();
       thisProduct.renderInMenu();
+      thisProduct.initAccordion();
 
       //console.log('constructor-new Product:', thisProduct);
     }
