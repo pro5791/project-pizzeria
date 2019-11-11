@@ -61,10 +61,11 @@
       thisProduct.renderInMenu();
       thisProduct.getElements();
       thisProduct.initOrderForm();
+      thisProduct.initAmountWidget();
       thisProduct.processOrder();
       thisProduct.initAccordion();
 
-      //console.log('constructor-new Product:', thisProduct);
+      console.log('constructor-new Product:', thisProduct);
     }
 
     renderInMenu(){
@@ -93,6 +94,7 @@
       thisProduct.cartButton = thisProduct.element.querySelector(select.menuProduct.cartButton);
       thisProduct.priceElem = thisProduct.element.querySelector(select.menuProduct.priceElem);
       thisProduct.imageWrapper = thisProduct.element.querySelector(select.menuProduct.imageWrapper);
+      thisProduct.amountWidgetElem = thisProduct.element.querySelector(select.menuProduct.amountWidget);
 
       //console.log('thisProduct: ', thisProduct);
     }
@@ -178,11 +180,11 @@
         /* START LOOP: for each optionId in param.options */
         for(let optionId in param.options){
           const option = param.options[optionId];
-          console.log('option: ' ,option);
+          //console.log('option: ' ,option);
 
           /* save the element in param.options with key optionId as const option */
           const optionSelected = formData.hasOwnProperty(paramId) && formData[paramId].indexOf(optionId) > -1;
-          console.log('optionSelected: ' ,optionSelected);
+          //console.log('optionSelected: ' ,optionSelected);
 
           const images = thisProduct.imageWrapper.querySelectorAll('.' + paramId + '-' + optionId);
           //console.log('images: ', images);
@@ -219,8 +221,23 @@
       /* END LOOP: for each paramId in thisProduct.data.params */
       }
       /* set the contents of thisProduct.priceElem to be the value of variable price */
-      thisProduct.priceElem.innerHTML = price
-      console.log('thisProduct.priceElem.innerHTML: ', thisProduct.priceElem.innerHTML);
+      thisProduct.priceElem.innerHTML = price;
+      //console.log('thisProduct.priceElem.innerHTML: ', thisProduct.priceElem.innerHTML);
+    }
+
+    initAmountWidget(){
+      const thisProduct = this;
+
+      thisProduct.amountWidget = new AmountWidget(thisProduct.amountWidgetElem);
+    }
+  }
+
+  class AmountWidget{
+    constructor(element){
+      const thisWidget = this;
+
+      console.log('AmountWidget: ', AmountWidget);
+      console.log('constructor arguments: ', element);
     }
   }
 
