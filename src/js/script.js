@@ -65,7 +65,7 @@
       thisProduct.processOrder();
       thisProduct.initAccordion();
 
-      console.log('constructor-new Product:', thisProduct);
+      //console.log('constructor-new Product:', thisProduct);
     }
 
     renderInMenu(){
@@ -167,7 +167,7 @@
 
       /* set variable price to equal thisProduct.data.price */
       let price = thisProduct.data.price;
-      console.log('price: ', price);
+      //console.log('price: ', price);
 
       /* START LOOP: for each paramId in thisProduct.data.params */
       for(let paramId in thisProduct.data.params){
@@ -247,8 +247,8 @@
       thisWidget.setValue(thisWidget.input.value);
       thisWidget.initActions();
 
-      console.log('AmountWidget: ', thisWidget);
-      console.log('constructor arguments: ', element);
+      //console.log('AmountWidget: ', thisWidget);
+      //console.log('constructor arguments: ', element);
     }
 
     getElements(element){
@@ -265,7 +265,7 @@
 
       const newValue = parseInt(value);
 
-      /* TODO: Add validation */
+      /* DONE: Add validation */
       if(thisWidget.value != newValue && newValue >= settings.amountWidget.defaultMin && newValue <= settings.amountWidget.defaultMax){
         thisWidget.value = newValue;
         thisWidget.announce();
@@ -291,7 +291,7 @@
         thisWidget.setValue(thisWidget.value+1);
       });
 
-      console.log('initActions-thisProduct: ', thisWidget);
+      //console.log('initActions-thisProduct: ', thisWidget);
     }
 
     announce(){
@@ -319,11 +319,11 @@
 
     init: function(){
       const thisApp = this;
-      console.log('*** App starting ***');
-      console.log('init-thisApp:', thisApp);
-      console.log('init-classNames:', classNames);
-      console.log('init-settings:', settings);
-      console.log('init-templates:', templates);
+      //console.log('*** App starting ***');
+      //console.log('init-thisApp:', thisApp);
+      //console.log('init-classNames:', classNames);
+      //console.log('init-settings:', settings);
+      //console.log('init-templates:', templates);
 
       thisApp.initData();
       thisApp.initMenu();
