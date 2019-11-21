@@ -309,7 +309,7 @@
       thisCart.product = [];
 
       thisCart.getElements(element);
-      thisCart.initActions(element);
+      thisCart.initActions();
 
       console.log('new Cart: ', thisCart);
     }
