@@ -320,7 +320,9 @@
       thisCart.dom = {};
 
       thisCart.dom.wraper = element;
-      thisCart.dom.toggleTriger = thisCart.element.querySelector(select.cart.toggleTriger);
+      thisCart.dom.toggleTrigger = element.querySelector(select.cart.toggleTrigger);
+
+      console.log('test: ', thisCart);
     }
 
     initActions(){
