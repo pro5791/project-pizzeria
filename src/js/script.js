@@ -328,11 +328,10 @@
     initActions(){
       const thisCart = this;
 
-      thisCartthisCart.dom.toggleTrigger.addEventListener('click', function() {
-        thisCart.dom.wrapper.classList.toggle(classNames.cart.wrapperActive);
+      thisCart.dom.toggleTrigger.addEventListener('click', function(){
+          thisCart.dom.wrapper.classList.toggle(classNames.cart.wrapperActive);
       });
     }
-
   }
 
   const app = {
