@@ -309,6 +309,7 @@
       thisCart.product = [];
 
       thisCart.getElements(element);
+      thisCart.initActions(element);
 
       console.log('new Cart: ', thisCart);
     }
@@ -322,6 +323,13 @@
       thisCart.dom.toggleTriger = thisCart.element.querySelector(select.cart.toggleTriger);
     }
 
+    initActions(){
+      const thisCart = this;
+
+      thisCartthisCart.dom.toggleTrigger.addEventListener('click', function() {
+        thisCart.dom.wrapper.classList.toggle(classNames.cart.wrapperActive);
+      });
+    }
 
   }
 
