@@ -268,6 +268,8 @@
       const thisProduct = this;
 
       app.cart.add(thisProduct);
+      console.log('thisProduct: ', thisProduct);
+
     }
   }
 
