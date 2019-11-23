@@ -267,7 +267,6 @@
       //console.log('thisProduct.params: ', thisProduct.params);
     }
 
-
     initAmountWidget(){
       const thisProduct = this;
 
@@ -429,6 +428,15 @@
       thisCartProduct.dom.remove = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.remove);
 
       //console.log('thisCartProduct: ', thisCartProduct);
+    }
+
+    initAmountWidget(){
+      const thisProduct = this;
+
+      thisProduct.amountWidget = new AmountWidget(thisProduct.amountWidgetElem);
+      thisProduct.amountWidgetElem.addEventListener('updated', function(){
+        thisProduct.processOrder();
+      });
     }
   }
 
