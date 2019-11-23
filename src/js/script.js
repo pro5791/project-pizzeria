@@ -394,7 +394,7 @@
       thisCart.dom.productList.appendChild(generatedDOM);
 
       thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
-      console.log('thisCart.products: ', thisCart.products);
+      //console.log('thisCart.products: ', thisCart.products);
     }
   }
 
@@ -402,7 +402,7 @@
     constructor(menuProduct, element){
       const thisCartProduct = this;
 
-      console.log('CartProduct: ', CartProduct);
+      //console.log('CartProduct: ', CartProduct);
 
       thisCartProduct.id = menuProduct.id;
       thisCartProduct.name = menuProduct.name;
@@ -413,7 +413,7 @@
 
       thisCartProduct.getElements(element);
 
-      console.log('thisCartProduct: ', thisCartProduct);
+      //console.log('thisCartProduct: ', thisCartProduct);
 
       thisCartProduct.initAmountWidget();
     }
