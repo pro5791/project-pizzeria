@@ -267,6 +267,7 @@
       //console.log('thisProduct.params: ', thisProduct.params);
     }
 
+
     initAmountWidget(){
       const thisProduct = this;
 
