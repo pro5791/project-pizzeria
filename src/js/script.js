@@ -435,7 +435,8 @@
 
       thisCartProduct.amountWidget = new amountWidget(thisCartProduct.dom.amountWidget);
       thisCartProduct.dom.amountWidget.addEventListener('updated', function(){
-        thisCartProduct.processOrder();
+        thisCartProduct.amount =
+          thisCartProduct.price =
       });
     }
   }
