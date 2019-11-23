@@ -445,11 +445,11 @@
     remove(cartProduct){
       const thisCart = this;
       const index = thisCart.products.indexOf(cartProduct);
-      thisCart.products.splice(index);
+      thisCart.products.splice(index, 1);
       cartProduct.dom.wrapper.remove();
       thisCart.update();
 
-      console.log('test: ', index);
+      console.log('test: ', thisCart.products.indexOf(cartProduct));
     }
   }
 
