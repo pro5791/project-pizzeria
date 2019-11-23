@@ -192,6 +192,8 @@
       const formData = utils.serializeFormToObject(thisProduct.form);
       //console.log('formData: ', formData);
 
+      thisProduct.params = {};
+
       /* set variable price to equal thisProduct.data.price */
       let price = thisProduct.data.price;
       //console.log('price: ', price);
@@ -231,6 +233,14 @@
 
           /* START IF: if option is selected */
           if(optionSelected){
+            if(!thisProduct.params[paramId]){
+              thisProduct.params[paramId] = {
+                label: param.label,
+                options: {},
+              };
+            }
+            thisProduct.params[paramId].options[optionId] = option.label;
+
             for(let image of images){
               image.classList.add(classNames.menuProduct.imageVisible);
             }
@@ -248,11 +258,13 @@
       /* END LOOP: for each paramId in thisProduct.data.params */
       }
       /* multiply price by amount */
-      price *= thisProduct.amountWidget.value;
+      thisProduct.priceSingle = price;
+      thisProduct.price = thisProduct.priceSingle * thisProduct.amountWidget.value;
 
       /* set the contents of thisProduct.priceElem to be the value of variable price */
-      thisProduct.priceElem.innerHTML = price;
+      thisProduct.priceElem.innerHTML = thisProduct.price;
       //console.log('thisProduct.priceElem.innerHTML: ', thisProduct.priceElem.innerHTML);
+      console.log('thisProduct.params: ', thisProduct.params);
     }
 
     initAmountWidget(){
@@ -266,9 +278,12 @@
 
     addToCart(){
       const thisProduct = this;
-      console.log('thisProduct: ', thisProduct);
+      //console.log('thisProduct: ', thisProduct);
 
-      //app.cart.add(thisProduct);
+      thisProduct.data.name = thisProduct.name
+      thisProduct.amountWidget.value = thisProduct.amount
+
+      app.cart.add(thisProduct);
     }
   }
 
