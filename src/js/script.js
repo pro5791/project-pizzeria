@@ -397,6 +397,26 @@
 
       thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
       //console.log('thisCart.products: ', thisCart.products);
+
+      thisCart.update();
+    }
+
+    update(){
+      const thisCart = this;
+
+      thisCart.totalNumber = 0;
+      thisCart.subtotalPrice = 0;
+
+      for(let product of thisCart.products){
+        thisCart.totalNumber += product.amount;
+        thisCart.subtotalPrice += product.price;
+      }
+
+      thisCart.totalPrice = thisCart.subtotalPrice + thisCart.deliveryFee;
+
+      console.log('totalNumber: ', totalNumber);
+      console.log('subtotalPrice: ', subtotalPrice);
+      console.log('thisCart.totalPrice: ', thisCart.totalPrice);
     }
   }
 
