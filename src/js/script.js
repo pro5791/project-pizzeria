@@ -415,14 +415,15 @@
 
       for(let product of thisCart.products){
         thisCart.totalNumber += product.amount;
+        //console.log('product.amount: ', product.amount);
         thisCart.subtotalPrice += product.price;
       }
 
       thisCart.totalPrice = thisCart.subtotalPrice + thisCart.deliveryFee;
 
-      //console.log('totalNumber: ', totalNumber);
-      console.log('subtotalPrice: ', subtotalPrice);
-      console.log('thisCart.totalPrice: ', thisCart.totalPrice);
+      console.log('totalNumber: ', thisCart.totalNumber);
+      console.log('subtotalPrice: ', thisCart.subtotalPrice);
+      console.log('totalPrice: ', thisCart.totalPrice);
 
       for(let key of thisCart.renderTotalsKeys){
         for(let elem of thisCart.dom[key]){
