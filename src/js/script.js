@@ -414,6 +414,8 @@
       thisCartProduct.getElements(element);
 
       console.log('thisCartProduct: ', thisCartProduct);
+
+      thisCartProduct.initAmountWidget();
     }
 
     getElements(element){
@@ -433,7 +435,7 @@
     initAmountWidget(){
       const thisCartProduct = this;
 
-      thisCartProduct.amountWidget = new amountWidget(thisCartProduct.dom.amountWidget);
+      thisCartProduct.amountWidget = new AmountWidget(thisCartProduct.dom.amountWidget);
       thisCartProduct.dom.amountWidget.addEventListener('updated', function(){
         thisCartProduct.amount = thisCartProduct.amountWidget.value;
         thisCartProduct.price = thisCartProduct.priceSingle * thisCartProduct.amount;
