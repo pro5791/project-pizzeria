@@ -411,11 +411,11 @@
 
       thisCartProduct.getElements(element);
 
-      console.log('thisCartProduct: ', thisCartProduct);
+      //console.log('thisCartProduct: ', thisCartProduct);
     }
 
     getElements(element){
-      thisCartProduct = this;
+      const thisCartProduct = this;
 
       thisCartProduct.dom = {};
       thisCartProduct.dom.wrapper = element;
@@ -425,7 +425,7 @@
       thisCartProduct.dom.edit = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.edit);
       thisCartProduct.dom.remove = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.remove);
 
-
+      console.log('thisCartProduct: ', thisCartProduct);
     }
 
   }
