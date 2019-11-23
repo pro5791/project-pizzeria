@@ -266,10 +266,9 @@
 
     addToCart(){
       const thisProduct = this;
-
-      app.cart.add(thisProduct);
       console.log('thisProduct: ', thisProduct);
 
+      //app.cart.add(thisProduct);
     }
   }
 
@@ -392,7 +391,7 @@
       const thisApp = this;
 
       const cartElem = document.querySelector(select.containerOf.cart);
-      thisApp.cart - new Cart(cartElem);
+      thisApp.cart = new Cart(cartElem);
     },
 
     init: function(){
