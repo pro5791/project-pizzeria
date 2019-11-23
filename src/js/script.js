@@ -381,7 +381,12 @@
     }
 
     add(menuProduct){
-      //const thisCart = this;
+      const thisCart = this;
+
+      const generatedHTML = templates.cartProduct(menuProduct);
+      console.log('generatedHTML: ', generatedHTML);
+
+
 
       console.log('adding product: ', menuProduct);
     }
