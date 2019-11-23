@@ -280,8 +280,8 @@
       const thisProduct = this;
       //console.log('thisProduct: ', thisProduct);
 
-      thisProduct.name = thisProduct.data.name
-      thisProduct.amount = thisProduct.amountWidget.value
+      thisProduct.name = thisProduct.data.name;
+      thisProduct.amount = thisProduct.amountWidget.value;
 
       app.cart.add(thisProduct);
     }
@@ -394,13 +394,16 @@
       thisCart.dom.productList.appendChild(generatedDOM);
 
       thisCart.products.push(menuProduct);
-      console.log('thisCart.products: ', thisCart.products)
+      console.log('thisCart.products: ', thisCart.products);
     }
   }
 
   class CartProduct{
     constructor(menuProduct, element){
       const thisCartProduct = this;
+
+      console.log('CartProduct: ', CartProduct);
+
 
       thisCartProduct.id = menuProduct.id;
       thisCartProduct.name = menuProduct.name;
