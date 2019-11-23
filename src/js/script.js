@@ -482,6 +482,10 @@
         thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
       });
     }
+
+    remove(){
+
+    }
   }
 
   const app = {
