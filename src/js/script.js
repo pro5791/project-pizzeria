@@ -402,7 +402,16 @@
     constructor(menuProduct, element){
       const thisCartProduct = this;
 
+      thisCartProduct.id = menuProduct.id;
+      thisCartProduct.name = menuProduct.name;
+      thisCartProduct.price = menuProduct.price;
+      thisCartProduct.priceSingle = menuProduct.priceSingle;
+      thisCartProduct.amount = menuProduct.amount;
+      thisCartProduct.params = JSON.parse(JSON.stringify(menuProduct.params));
 
+      thisCartProduct.getElements(element);
+
+      console.log('thisCartProduct: ', thisCartProduct);
     }
 
   }
