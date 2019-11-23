@@ -420,7 +420,7 @@
 
       thisCart.totalPrice = thisCart.subtotalPrice + thisCart.deliveryFee;
 
-      console.log('totalNumber: ', totalNumber);
+      //console.log('totalNumber: ', totalNumber);
       console.log('subtotalPrice: ', subtotalPrice);
       console.log('thisCart.totalPrice: ', thisCart.totalPrice);
 
