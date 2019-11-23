@@ -393,7 +393,7 @@
 
       thisCart.dom.productList.appendChild(generatedDOM);
 
-      thisCart.products.push(menuProduct);
+      thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
       console.log('thisCart.products: ', thisCart.products);
     }
   }
@@ -403,7 +403,6 @@
       const thisCartProduct = this;
 
       console.log('CartProduct: ', CartProduct);
-
 
       thisCartProduct.id = menuProduct.id;
       thisCartProduct.name = menuProduct.name;
@@ -431,6 +430,7 @@
       //console.log('thisCartProduct: ', thisCartProduct);
     }
   }
+
   const app = {
     initMenu: function(){
       const thisApp = this;
