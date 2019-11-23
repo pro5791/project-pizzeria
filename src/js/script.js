@@ -444,6 +444,10 @@
 
     remove(cartProduct){
       const thisCart = this;
+      const index = thisCart.products.indexOf(cartProduct);
+      thisCart.products.splice(index);
+      cartProduct.dom.wrapper.remove();
+      thisCart.update();
     }
   }
 
