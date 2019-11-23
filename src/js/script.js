@@ -386,9 +386,10 @@
       const generatedHTML = templates.cartProduct(menuProduct);
       console.log('generatedHTML: ', generatedHTML);
 
+      const generatedDOM = utils.createDOMFromHTML(generatedHTML);
+      console.log('generatedDOM: ', generatedDOM);
 
-
-      console.log('adding product: ', menuProduct);
+      //console.log('adding product: ', menuProduct);
     }
   }
 
