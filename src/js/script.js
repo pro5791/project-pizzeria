@@ -355,6 +355,8 @@
     constructor(element){
       const thisCart = this;
 
+      thisCart.deliveryFee = settings.cart.defaultDeliveryFee;
+
       thisCart.products = [];
 
       thisCart.getElements(element);
