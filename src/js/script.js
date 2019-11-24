@@ -334,6 +334,10 @@
       thisCart.dom.productList.addEventListener('remove', function(){
         thisCart.remove(event.detail.cartProduct);
       });
+
+      thisCart.dom.productList.addEventListener('submit', function(){
+        event.preventDefault();
+      });
     }
 
     add(menuProduct){
