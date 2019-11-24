@@ -399,8 +399,9 @@
       const url = settings.db.url + '/' + settings.db.order;
 
       const payload = {
-        address: thisCart.dom.address,
-        phone: thisCart.dom.phone,
+        address: thisCart.dom.address.value,
+        phone: thisCart.dom.phone.value,
+        totalNumber: thisCart.totalNumber,
         totalPrice: thisCart.totalPrice,
         subtotalPrice: thisCart.subtotalPrice,
         deliveryFee: thisCart.deliveryFee,
@@ -408,7 +409,7 @@
       };
 
       for(let product of thisCart.products){
-        payload.products(product.getData());
+        payload.products.push(product.getData());
       }
 
       const options = {
@@ -496,6 +497,8 @@
         thisCartProduct.remove();
         //console.log('thisCartProduct.remove: ', thisCartProduct.remove);
       });
+
+
     }
   }
 
