@@ -407,7 +407,9 @@
         products: [],
       };
 
-
+      for(let product of thisCart.products){
+        payload.products(product.getData());
+      }
 
       const options = {
         method: 'POST',
