@@ -389,7 +389,7 @@
       cartProduct.dom.wrapper.remove();
       thisCart.update();
 
-      console.log('test: ', thisCart.products.indexOf(cartProduct));
+      //console.log('test: ', thisCart.products.indexOf(cartProduct));
     }
 
     sendOrder(){
@@ -406,14 +406,15 @@
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(payload),
-      }
+      };
 
       fetch(url, options)
         .then(function(response){
           return response.json();
-        }).then(function(parseResponse){
+        })
+        .then(function(parseResponse){
           console.log('parseResponse: ', parseResponse);
-      });
+        });
     }
   }
 
@@ -509,7 +510,7 @@
           return rawResponse.json();
         })
         .then(function(parsedResponse){
-          console.log('parsedResponse: ', parsedResponse);
+          //console.log('parsedResponse: ', parsedResponse);
 
           /* save parsedResponse as thisApp.data.products */
           thisApp.data.products = parsedResponse;
@@ -517,7 +518,7 @@
           /* execute initMenu method */
           thisApp.initMenu();
         });
-      console.log('thisApp.data: ', JSON.stringify(thisApp.data));
+      //console.log('thisApp.data: ', JSON.stringify(thisApp.data));
     },
 
     initCart: function(){
