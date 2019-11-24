@@ -407,6 +407,13 @@
         },
         body: JSON.stringify(payload),
       }
+
+      fetch(url, options)
+        .then(function(response){
+          return response.json();
+        }).then(function(parseResponse){
+          console.log('parseResponse: ', parseResponse);
+      });
     }
   }
 
