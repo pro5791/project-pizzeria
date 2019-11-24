@@ -337,6 +337,7 @@
 
       thisCart.dom.productList.addEventListener('submit', function(){
         event.preventDefault();
+        thisCart.sendOrder();
       });
     }
 
@@ -389,6 +390,23 @@
       thisCart.update();
 
       console.log('test: ', thisCart.products.indexOf(cartProduct));
+    }
+
+    sendOrder(){
+      const url = settings.db.url + '/' + settings.db.order;
+
+      const payload = {
+        address: 'test',
+        totalPrice: thisCart.totalPrice,
+      };
+
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      }
     }
   }
 
