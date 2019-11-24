@@ -10,7 +10,6 @@ const app = {
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
     const idFromHash = window.location.hash.replace('#/', '');
-    console.log('idFromHash: ', idFromHash);
 
     let pageMatchingHash = thisApp.pages[0].id;
 
@@ -50,7 +49,7 @@ const app = {
       link.classList.toggle(
         classNames.nav.active,
         link.getAttribute('href') == '#' + pageID
-        );
+      );
     }
   },
 
