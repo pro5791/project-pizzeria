@@ -335,7 +335,7 @@
         thisCart.remove(event.detail.cartProduct);
       });
 
-      thisCart.dom.productList.addEventListener('submit', function(){
+      thisCart.dom.form.addEventListener('submit', function(){
         event.preventDefault();
         thisCart.sendOrder();
       });
@@ -412,8 +412,7 @@
       fetch(url, options)
         .then(function(response){
           return response.json();
-        })
-        .then(function(parseResponse){
+        }).then(function(parseResponse){
           console.log('parseResponse: ', parseResponse);
         });
     }
