@@ -506,7 +506,6 @@
       //console.log('init-templates:', templates);
 
       thisApp.initData();
-      //thisApp.initMenu();
       thisApp.initCart();
     },
   };
