@@ -97,6 +97,15 @@ const app = {
     });
   },
 
+  initBooking: function(){
+    const thisApp = this;
+
+    const bookingElem = document.querySelector(select.containerOf.booking);
+    thisApp.booking = new Booking(bookingElem);
+
+    //console.log('bookElem: ', bookingElem);
+  },
+
   init: function(){
     const thisApp = this;
     //console.log('*** App starting ***');
@@ -106,9 +115,9 @@ const app = {
     //console.log('init-templates:', templates);
 
     thisApp.initPages();
-
     thisApp.initData();
     thisApp.initCart();
+    thisApp.initBooking();
   },
 };
 
