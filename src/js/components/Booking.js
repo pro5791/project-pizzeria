@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+import {templates, select} from '../settings.js';
+import AmountWidget from './AmountWidget.js';
 
 class Booking{
   constructor(element){
@@ -20,7 +22,12 @@ class Booking{
     thisBooking.dom.hoursAmount = thisBooking.dom.wrapper.querySelector(select.booking.hoursAmount);
   }
 
+  initWidgets(){
+    const thisBooking = this;
 
+    thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
+    thisBooking.hourAmount = new AmountWidget(thisBooking.dom.hoursAmount);
+  }
 }
 
 export default Booking;
