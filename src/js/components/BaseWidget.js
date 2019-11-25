@@ -1,4 +1,4 @@
-import {settings} from "../settings";
+
 
 class BaseWidget{
   constructor(wrapperElement, initialValue){
@@ -15,7 +15,7 @@ class BaseWidget{
 
     const newValue = thisWidget.parseInt(value);
 
-    if(newValue != thisWidget.value && thisWidget.isVallid(newValue){
+    if(newValue != thisWidget.value && thisWidget.isVallid(newValue)){
       thisWidget.value = newValue;
       thisWidget.announce();
     }
@@ -28,7 +28,22 @@ class BaseWidget{
   }
 
   isVallid(value){
-    return !isNaN(value)
+    return !isNaN(value);
+  }
+
+  renderValue(){
+    const thisWidget = this;
+
+    thisWidget.dom.wrapper.innerHTML = thisWidget.value;
+  }
+
+  announce(){
+    const thisWidget = this;
+
+    const event = new CustomEvent('updated', {
+      bubbles: true
+    });
+    thisWidget.dom.wrapper.dispatchEvent(event);
   }
 }
 

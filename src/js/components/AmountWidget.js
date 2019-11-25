@@ -56,15 +56,6 @@ class AmountWidget extends BaseWidget{
 
     //console.log('initActions-thisProduct: ', thisWidget);
   }
-
-  announce(){
-    const thisWidget = this;
-
-    const event = new CustomEvent('updated', {
-      bubbles: true
-    });
-    thisWidget.dom.wrapper.dispatchEvent(event);
-  }
 }
 
 export default AmountWidget;
