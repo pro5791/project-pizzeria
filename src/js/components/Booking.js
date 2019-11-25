@@ -10,7 +10,6 @@ class Booking{
     thisBooking.initWidgets();
   }
 
-
   render(element){
     const thisBooking = this;
     const generatedHTML = templates.bookingWidget();

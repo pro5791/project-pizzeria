@@ -88,7 +88,7 @@
       <workItem from="1574505415495" duration="53000" />
       <workItem from="1574505509978" duration="22815000" />
       <workItem from="1574610470869" duration="10201000" />
-      <workItem from="1574674725864" duration="3539000" />
+      <workItem from="1574674725864" duration="3648000" />
     </task>
     <servers />
   </component>
@@ -112,5 +112,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="NONE" type="javascript">
+          <url>file://$PROJECT_DIR$/src/js/components/Booking.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
