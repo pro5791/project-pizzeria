@@ -4,7 +4,7 @@ class BaseWidget{
   constructor(wrapperElement, initialValue){
     const thisWidget = this;
 
-    thisWidget.dom - {};
+    thisWidget.dom = {};
     thisWidget.dom.wrapper = wrapperElement;
 
     thisWidget.value = initialValue;
@@ -13,7 +13,7 @@ class BaseWidget{
   setValue(value){
     const thisWidget = this;
 
-    const newValue = thisWidget.parseInt(value);
+    const newValue = thisWidget.parseValue(value);
 
     if(newValue != thisWidget.value && thisWidget.isVallid(newValue)){
       thisWidget.value = newValue;
