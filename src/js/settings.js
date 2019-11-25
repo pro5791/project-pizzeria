@@ -1,5 +1,5 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-undef */
-
 
 export const select = {
   templateOf: {
