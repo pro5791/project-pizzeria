@@ -1,4 +1,4 @@
-
+/* eslint-disable linebreak-style */
 
 class BaseWidget{
   constructor(wrapperElement, initialValue){
@@ -7,20 +7,32 @@ class BaseWidget{
     thisWidget.dom = {};
     thisWidget.dom.wrapper = wrapperElement;
 
-    thisWidget.value = initialValue;
+    thisWidget.correctValue = initialValue;
   }
 
-  setValue(value){
+  get value(){
+    const thisWidget = this;
+
+    return thisWidget.correctValue;
+  }
+
+  set value(value){
     const thisWidget = this;
 
     const newValue = thisWidget.parseValue(value);
 
-    if(newValue != thisWidget.value && thisWidget.isVallid(newValue)){
-      thisWidget.value = newValue;
+    if(newValue != thisWidget.correctValue && thisWidget.isVallid(newValue)){
+      thisWidget.correctValue = newValue;
       thisWidget.announce();
     }
 
     thisWidget.renderValue();
+  }
+
+  setValue(value) {
+    const thisWidget = this;
+
+    thisWidget.value = value;
   }
 
   parseValue(value){
@@ -46,7 +58,5 @@ class BaseWidget{
     thisWidget.dom.wrapper.dispatchEvent(event);
   }
 }
-
-
 
 export default BaseWidget;
