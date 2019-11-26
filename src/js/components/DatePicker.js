@@ -36,18 +36,17 @@ class DatePicker extends BaseWidget{
         thisWidget.value = dateStr;
       },
     });
-
-    parseValue(value) {
-      return value;
-    }
-
-    isValid() {
-      return true;
-    }
-
-    renderValue() {
-      return null;
-    }
   }
 
+  parseValue(value){
+    return value;
+  }
+
+  isValid() {
+    return true;
+  }
+
+  renderValue() {
+    return null;
+  }
 }

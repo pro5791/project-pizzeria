@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import {templates, select} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
+import DatePicker from './DatePicker.js';
 
 class Booking{
   constructor(element){
