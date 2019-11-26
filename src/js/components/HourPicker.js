@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-undef */
 
-import {BaseWidget} from './BaseWidget.js';
+import BaseWidget from './BaseWidget.js';
 import {settings, select} from '../settings.js';
 import {utils} from '../utils.js';
 
@@ -29,6 +29,7 @@ class HourPicker extends BaseWidget{
 
   parseValue(){
     return utils.numberToHour(value);
+
   }
 
   isValid(){
