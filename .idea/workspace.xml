@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="afce99b0-14be-4c5a-a9ea-4b9da764911d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/DatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/DatePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/HourPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/HourPicker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +94,7 @@
       <workItem from="1574674725864" duration="4008000" />
       <workItem from="1574702858522" duration="6086000" />
       <workItem from="1574713410435" duration="33000" />
-      <workItem from="1574753482323" duration="7623000" />
+      <workItem from="1574753482323" duration="8371000" />
     </task>
     <servers />
   </component>
@@ -124,7 +127,7 @@
       <breakpoints>
         <line-breakpoint suspend="NONE" type="javascript">
           <url>file://$PROJECT_DIR$/src/js/components/Booking.js</url>
-          <line>29</line>
+          <line>32</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

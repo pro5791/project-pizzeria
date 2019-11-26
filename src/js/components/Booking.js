@@ -1,7 +1,10 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
+
 import {templates, select} from '../settings.js';
-import AmountWidget from './AmountWidget.js';
+import {AmountWidget} from './AmountWidget.js';
 import DatePicker from './DatePicker.js';
+import HourPicker from './HourPicker.js';
 
 class Booking{
   constructor(element){
