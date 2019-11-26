@@ -1,7 +1,8 @@
 /* eslint-disable linebreak-style */
 
 import BaseWidget from './BaseWidget.js';
-import {settings} from "../settings";
+import {select, settings} from "../settings";
+import {utils} from "../utils";
 
 class DatePicker extends BaseWidget{
   constructor(wrapper){
@@ -36,7 +37,17 @@ class DatePicker extends BaseWidget{
       },
     });
 
+    parseValue(value) {
+      return value;
+    }
 
+    isValid() {
+      return true;
+    }
+
+    renderValue() {
+      return null;
+    }
   }
 
 }
