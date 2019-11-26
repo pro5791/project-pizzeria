@@ -39,10 +39,6 @@ class DatePicker extends BaseWidget{
     });
   }
 
-  initPlugin(){
-    const thisWidget = this;
-  }
-
   isValid(){
     return true;
   }
