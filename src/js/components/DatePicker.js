@@ -1,12 +1,13 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
 
+import {select, settings} from '../settings.js';
+import {utils} from '../utils.js';
 import BaseWidget from './BaseWidget.js';
-import {select, settings} from "../settings";
-import {utils} from "../utils";
 
 class DatePicker extends BaseWidget{
   constructor(wrapper){
-    super(wraper, utils.dateToStr(new Date()));
+    super(wrapper, utils.dateToStr(new Date()));
     const thisWidget = this;
 
     thisWidget.dom.input = thisWidget.dom.wrapper.querySelector(select.widgets.datePicker.input);
@@ -32,7 +33,7 @@ class DatePicker extends BaseWidget{
       locale: {
         firstDayOfWeek: 1
       },
-      onChange: function(selectDates, dateStr){
+      onChange: function(selectedDates, dateStr) {
         thisWidget.value = dateStr;
       },
     });
@@ -50,3 +51,5 @@ class DatePicker extends BaseWidget{
     return null;
   }
 }
+
+export default DatePicker;
