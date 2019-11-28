@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-undef */
 
-import {templates, select} from '../settings.js';
+import {templates, select, settings} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
 import DatePicker from './DatePicker.js';
 import HourPicker from './HourPicker.js';
@@ -12,6 +12,19 @@ class Booking{
 
     thisBooking.render(element);
     thisBooking.initWidgets();
+    thisBooking.getData();
+  }
+
+  getData(){
+    const thisBooking = this;
+
+
+
+    const urls = {
+      booking:       'settings.db.url' + '/' + settings.db.booking ,
+      eventsCurrent: 'settings.db.url' + '/' + settings.db.event   ,
+      eventsRepeat:  'settings.db.url' + '/' + settings.db.event   ,
+    };
   }
 
   render(element){
