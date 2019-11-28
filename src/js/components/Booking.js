@@ -2,6 +2,7 @@
 /* eslint-disable no-undef */
 
 import {templates, select, settings} from '../settings.js';
+import {utils} from '../utils.js';
 import AmountWidget from './AmountWidget.js';
 import DatePicker from './DatePicker.js';
 import HourPicker from './HourPicker.js';
@@ -18,13 +19,31 @@ class Booking{
   getData(){
     const thisBooking = this;
 
+    const params = {
+      booking: [
+        settings.db.dateStartParamKey + '=' + utils.dateToStr(thisBooking.datePicker.minDate),
+        settings.db.dateEndParamKey + '=' + utils.dateToStr(thisBooking.datePicker.maxDate),
+      ],
+      eventsCurrent: [
 
+      ],
+      eventsRepeat: [
+
+      ],
+    };
+
+    console.log('getData params: ', params);
 
     const urls = {
-      booking:       'settings.db.url' + '/' + settings.db.booking ,
-      eventsCurrent: 'settings.db.url' + '/' + settings.db.event   ,
-      eventsRepeat:  'settings.db.url' + '/' + settings.db.event   ,
+      booking:       settings.db.url + '/' + settings.db.booking
+                                       + '?' + params.booking.join('&'),
+      eventsCurrent: settings.db.url + '/' + settings.db.event
+                                       + '?' + params.eventsCurrent.join('&'),
+      eventsRepeat:  settings.db.url + '/' + settings.db.event
+                                       + '?' + params.eventsRepeat.join('&'),
     };
+    console.log('getData urls: ', urls);
+urls
   }
 
   render(element){
