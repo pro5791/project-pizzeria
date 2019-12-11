@@ -56,10 +56,18 @@ class Booking{
     ])
       .then(function(bookingsResponses){
         const bookingsResponse = bookingsResponses[0];
-        return bookingsResponse.json();
+        const eventsCurrentResponse = bookingsResponses[1];
+        const eventsRepeatResponse = bookingsResponses[2];
+        return Promise.all([
+          bookingsResponse.json(),
+          eventsCurrentResponse.json(),
+          eventsRepeatResponse.json(),
+        ]);
       })
-      .then(function(bookings){
+      .then(function(bookings, eventsCurrent, eventsRepeat){
         console.log(bookings);
+        console.log(eventsCurrent);
+        console.log(eventsRepeat);
       });
   }
 

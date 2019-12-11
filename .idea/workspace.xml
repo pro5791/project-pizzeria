@@ -103,6 +103,7 @@
       <workItem from="1574776809925" duration="817000" />
       <workItem from="1574926074299" duration="429000" />
       <workItem from="1574938887253" duration="4856000" />
+      <workItem from="1576063809047" duration="849000" />
     </task>
     <servers />
   </component>
@@ -135,7 +136,7 @@
       <breakpoints>
         <line-breakpoint suspend="NONE" type="javascript">
           <url>file://$PROJECT_DIR$/src/js/components/Booking.js</url>
-          <line>82</line>
+          <line>90</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
