@@ -52,19 +52,19 @@ class Booking{
     Promise.all([
       fetch(urls.booking),
       fetch(urls.eventsCurrent),
-      fetch(urls.eventsRepeat)
+      fetch(urls.eventsRepeat),
     ])
-      .then(function(bookingsResponses){
-        const bookingsResponse = bookingsResponses[0];
-        const eventsCurrentResponse = bookingsResponses[1];
-        const eventsRepeatResponse = bookingsResponses[2];
+      .then(function(allResponses){
+        const bookingsResponse = allResponses[0];
+        const eventsCurrentResponse = allResponses[1];
+        const eventsRepeatResponse = allResponses[2];
         return Promise.all([
           bookingsResponse.json(),
           eventsCurrentResponse.json(),
           eventsRepeatResponse.json(),
         ]);
       })
-      .then(function(bookings, eventsCurrent, eventsRepeat){
+      .then(function([bookings, eventsCurrent, eventsRepeat]){
         console.log(bookings);
         console.log(eventsCurrent);
         console.log(eventsRepeat);
