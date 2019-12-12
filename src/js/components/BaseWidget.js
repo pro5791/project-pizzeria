@@ -39,7 +39,7 @@ class BaseWidget{
     return parseInt(value);
   }
 
-  isVallid(value){
+  isValid(value){
     return !isNaN(value);
   }
 
