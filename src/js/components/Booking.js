@@ -89,7 +89,7 @@ class Booking{
     const maxDate = thisBooking.datePicker.maxDate;
 
     for(let item of eventsRepeat){
-      if(item.repeat == 'daily'){
+      if(item.repeat === 'daily'){
         for(let loopDate = minDate; loopDate <= maxDate; loopDate = utils.addDays(loopDate, 1)){
           thisBooking.makeBooked(utils.dateToStr(loopDate), item.hour, item.duration, item.table);
         }
@@ -100,7 +100,7 @@ class Booking{
     thisBooking.updateDOM();
   }
 
-  makeBooked(date, hour, duration, table) {
+  makeBooked(date, hour, duration, table){
     const thisBooking = this;
 
     if(typeof thisBooking.booked[date] == 'undefined'){
@@ -145,13 +145,14 @@ class Booking{
       if(
         !allAvailable
         &&
-        thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId) > -1
+        thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId)
       ){
         table.classList.add(classNames.booking.tableBooked);
       } else {
         table.classList.remove(classNames.booking.tableBooked);
       }
     }
+    console.log('allAvailable: ', allAvailable);
   }
 
   render(element){

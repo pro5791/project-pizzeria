@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/HourPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/HourPicker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +56,7 @@
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,7 +106,7 @@
       <workItem from="1574926074299" duration="429000" />
       <workItem from="1574938887253" duration="4856000" />
       <workItem from="1576063809047" duration="6631000" />
-      <workItem from="1576134578039" duration="4578000" />
+      <workItem from="1576134578039" duration="6880000" />
     </task>
     <servers />
   </component>
