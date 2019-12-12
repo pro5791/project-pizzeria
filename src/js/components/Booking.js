@@ -138,14 +138,14 @@ class Booking{
 
     for(let table of thisBooking.dom.tables){
       let tableId = table.getAttribute(settings.booking.tableIdAttribute);
-      if(isNan(tableId)){
-        tableId = parseInt(table);
+      if(!isNaN(tableId)){
+        tableId = parseInt(tableId);
       }
 
       if(
         !allAvailable
         &&
-        thisBooking.booked[thisBooking.date][thisBooking.hourt].includes(tableId) > -1
+        thisBooking.booked[thisBooking.date][thisBooking.hour].includes(tableId) > -1
       ){
         table.classList.add(classNames.booking.tableBooked);
       } else {
@@ -173,12 +173,12 @@ class Booking{
     const thisBooking = this;
 
     thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
-    thisBooking.hourAmount = new AmountWidget(thisBooking.dom.hoursAmount);
+    thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
 
     thisBooking.datePicker = new DatePicker(thisBooking.dom.datePicker);
     thisBooking.hourPicker = new HourPicker(thisBooking.dom.hourPicker);
 
-    thisBooking.dom.wrapper.addEventListener('update', function(){
+    thisBooking.dom.wrapper.addEventListener('updated', function(){
       thisBooking.updateDOM();
     });
   }

@@ -103,7 +103,7 @@
       <workItem from="1574926074299" duration="429000" />
       <workItem from="1574938887253" duration="4856000" />
       <workItem from="1576063809047" duration="6631000" />
-      <workItem from="1576134578039" duration="2018000" />
+      <workItem from="1576134578039" duration="4332000" />
     </task>
     <servers />
   </component>
@@ -130,16 +130,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint suspend="NONE" type="javascript">
-          <url>file://$PROJECT_DIR$/src/js/components/Booking.js</url>
-          <line>175</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
