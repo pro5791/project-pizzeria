@@ -235,17 +235,15 @@ class Booking{
 
     const payload = {
       date: thisBooking.datePicker.value,
-      phone: thisCart.dom.phone.value,
-      totalNumber: thisCart.totalNumber,
-      totalPrice: thisCart.totalPrice,
-      subtotalPrice: thisCart.subtotalPrice,
-      deliveryFee: thisCart.deliveryFee,
-      products: [],
+      hour: thisBooking.hourPicker.value,
+      table: thisBooking.selectedTable,
+      repeat: false,
+      people: thisBooking.peopleAmount.value,
+      duration: thisBooking.hoursAmount.value,
+      starters: []
     };
 
-    for(let product of thisCart.products){
-      payload.products.push(product.getData());
-    }
+    console.log('payload:', payload);
 
     const options = {
       method: 'POST',
