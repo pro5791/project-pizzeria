@@ -193,6 +193,7 @@ class Booking{
         thisBooking.sendBooking();
       }
     });
+    thisBooking.initBooking();
   }
 
   initBooking(){
@@ -216,7 +217,7 @@ class Booking{
     }
 
     let hourPicker = thisBooking.hourPicker.dom.input;
-    let datePicker = thisBooking.datePickerPicker.dom.input;
+    let datePicker = thisBooking.datePicker.dom.input;
     datePicker.addEventListener('change', function(){
       thisBooking.selectedTable.length = 0;
       const tables = document.querySelector('.table');
@@ -258,6 +259,9 @@ class Booking{
         return response.json();
       }).then(function(){
       });
+    payload.table.forEach(element => {
+      thisBooking.makeBooked(payload.date, payload.hour, payload.duration, element);
+    });
     thisBooking.updateDOM();
   }
 }
