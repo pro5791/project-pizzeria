@@ -220,7 +220,7 @@ class Booking{
     let datePicker = thisBooking.datePicker.dom.input;
     datePicker.addEventListener('change', function(){
       thisBooking.selectedTable.length = 0;
-      const tables = document.querySelector('.table');
+      const tables = document.querySelectorAll('.table');
       tables.forEach(function(element){
         element.classList.remove('selected');
       });
