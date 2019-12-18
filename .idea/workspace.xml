@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afce99b0-14be-4c5a-a9ea-4b9da764911d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,8 @@
       <workItem from="1576519701226" duration="21000" />
       <workItem from="1576519737666" duration="43000" />
       <workItem from="1576528749341" duration="65000" />
-      <workItem from="1576654943827" duration="6918000" />
+      <workItem from="1576654943827" duration="7478000" />
+      <workItem from="1576688275876" duration="1230000" />
     </task>
     <servers />
   </component>
@@ -147,5 +148,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1027/-421.-1417.2560.1417@0.23.1680.1027" timestamp="1576519713449" />
+    <state x="100" y="123" width="1480" height="827" key="DiffContextDialog" timestamp="1576662577569">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="100" y="123" width="1480" height="827" key="DiffContextDialog/0.23.1680.1027/-1680.23.1680.1027@0.23.1680.1027" timestamp="1576662577569" />
   </component>
 </project>
