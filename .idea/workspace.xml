@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="afce99b0-14be-4c5a-a9ea-4b9da764911d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/AmountWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/AmountWidget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/BaseWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/BaseWidget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/settings.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +40,14 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
@@ -62,15 +67,15 @@
       <recent name="$PROJECT_DIR$/src/js/components" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -105,7 +110,13 @@
       <workItem from="1574926074299" duration="429000" />
       <workItem from="1574938887253" duration="4856000" />
       <workItem from="1576063809047" duration="6631000" />
-      <workItem from="1576134578039" duration="7749000" />
+      <workItem from="1576134578039" duration="9514000" />
+      <workItem from="1576236626594" duration="2917000" />
+      <workItem from="1576519630896" duration="24000" />
+      <workItem from="1576519701226" duration="21000" />
+      <workItem from="1576519737666" duration="43000" />
+      <workItem from="1576528749341" duration="65000" />
+      <workItem from="1576654943827" duration="2194000" />
     </task>
     <servers />
   </component>
@@ -132,5 +143,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576519713449">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1027/-421.-1417.2560.1417@0.23.1680.1027" timestamp="1576519713449" />
   </component>
 </project>
