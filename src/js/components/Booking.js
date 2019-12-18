@@ -184,10 +184,10 @@ class Booking{
       thisBooking.updateDOM();
     });
 
-    thisBooking.submit = thisBooking.dom.wrapper.querySelector(select.booking.bookingSubmit);
-    thisBooking.submit.addEventListener('click', function(){
+    thisBooking.submitBooking = thisBooking.dom.wrapper.querySelector(select.booking.bookingSubmit);
+    thisBooking.submitBooking.addEventListener('click', function(){
       event.preventDefault();
-      if(thisBooking.selectedTable.length === 0){
+      if(thisBooking.selectedTable.length == 0){
         alert('Please select a table');
       } else{
         thisBooking.sendBooking();
