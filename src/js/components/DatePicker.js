@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-undef */
+/* global flatpickr */
 
 import {select, settings} from '../settings.js';
 import {utils} from '../utils.js';

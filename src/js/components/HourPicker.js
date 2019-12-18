@@ -40,6 +40,11 @@ class HourPicker extends BaseWidget{
   renderValue(){
     const thisWidget = this;
     thisWidget.dom.output.innerHTML = thisWidget.value;
+
+    const tables = document.querySelectorAll('.table');
+    tables.forEach(function(element){
+      element.classList.remove('selected');
+    });
   }
 }
 
