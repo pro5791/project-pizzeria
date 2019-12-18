@@ -204,7 +204,7 @@ class Booking{
       table.addEventListener('click', function(){
         event.preventDefault();
         let changeToNumber = table.getAttribute('data-table');
-        if(table.classList.contains(classNames.booking.tableBooked)){
+        if(!table.classList.contains(classNames.booking.tableBooked)){
           table.classList.toggle(classNames.booking.selected);
 
           if(thisBooking.selectedTable.indexOf(table.getAttribute('data-table')) == -1){
