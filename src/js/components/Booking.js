@@ -207,7 +207,7 @@ class Booking{
         if(table.classList.contains(classNames.booking.tableBooked)){
           table.classList.toggle(classNames.booking.selected);
 
-          if(thisBooking.selectedTable.indexOf(table.getAttribute('data-table')) === -1){
+          if(thisBooking.selectedTable.indexOf(table.getAttribute('data-table')) == -1){
             thisBooking.selectedTable.push(parseInt(changeToNumber));
           } else {
             thisBooking.selectedTable.splice(thisBooking.selectedTable.indexOf(parseInt(changeToNumber)), 1);
