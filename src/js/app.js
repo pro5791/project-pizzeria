@@ -36,7 +36,7 @@ const app = {
         /* change URL hash */
         window.location.hash = '#/' +id;
 
-        console.log(id);
+        //console.log(id);
       });
     }
   },
@@ -55,13 +55,14 @@ const app = {
         link.getAttribute('href') == '#' + pageID
       );
     }
-    if (pageId === 'home') {
+    if (pageID === 'home') {
       document.getElementById('cart').style.display='none';
-      document.querySelectorAll('.main-nav').style.display='none';
+      document.querySelector('.main-nav').style.display='none';
     } else {
       document.getElementById('cart').style.display='';
-      document.querySelectorAll('.main-nav').style.display='';
+      document.querySelector('.main-nav').style.display='';
     }
+    console.log('pageID:', pageID);
   },
 
   initMenu: function(){
