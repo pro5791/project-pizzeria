@@ -35,6 +35,8 @@ const app = {
         thisApp.activatePage(id);
         /* change URL hash */
         window.location.hash = '#/' +id;
+
+        console.log(id);
       });
     }
   },
@@ -52,6 +54,13 @@ const app = {
         classNames.nav.active,
         link.getAttribute('href') == '#' + pageID
       );
+    }
+    if (pageId === 'home') {
+      document.getElementById('cart').style.display='none';
+      document.querySelectorAll('.main-nav').style.display='none';
+    } else {
+      document.getElementById('cart').style.display='';
+      document.querySelectorAll('.main-nav').style.display='';
     }
   },
 
