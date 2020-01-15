@@ -108,6 +108,26 @@ const app = {
     //console.log('bookElem: ', bookingElem);
   },
 
+  initCarousel: function() {
+    let comentIndex = 0;
+    setInterval(() => {
+      const comments = document.getElementsByClassName('carousel-comment');
+      const dots = document.getElementsByClassName('dot');
+
+      if (comments.length == comentIndex) {
+        comentIndex = 0;
+      }
+      comentIndex++;
+      for (let i = 0; i < comments.length; i++) {
+        comments[i].classList.remove('comment-active');
+        dots[i].classList.remove('active');
+      }
+      comments[comentIndex - 1].classList.add('comment-active');
+      dots[comentIndex - 1].classList.add('active');
+    },
+    3000);
+  },
+
   init: function(){
     const thisApp = this;
     //console.log('*** App starting ***');
@@ -120,6 +140,7 @@ const app = {
     thisApp.initData();
     thisApp.initCart();
     thisApp.initBooking();
+    thisApp.initCarousel();
   },
 };
 
